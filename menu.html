@@ -3,64 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="style.css
-    ">
+    <title>Menu - Coffee Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+
 </head>
-<body style="background-color: beige;">
-     <!--This is my header it should be the same on all pages-->
+<body>
+
     <header>
-        <nav>
-            <h1>Bloom & Bean</h1>
-            <hr style="border: 2px solid black;">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="menu.html">Menu</a>
-            <a href="contact.html">Contact</a>
-            <a href="order.html">Order</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="specials.html">Specials</a>
-            <hr style="border: 2px solid black;">
-        </nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">☕ Bloom & Bean</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
     </header>
 
     <main>
-<h2>Hot Drinks</h2>
-    <li>Espresso - R20</li>
-    <li>Americano - R25</li>
-    <li>Cappuccino - R30</li>
-    <li>Latte - R35</li>
-    <li>Hot Chocolate - R35</li>
-    <li>Tea (Green/Black) - R20</li>
+    <!-- Menu Section -->
+    <section class="menu section-padding">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
 
-<h2>Cold Drinks</h2>
-    <li>Iced Coffee - R35</li>
-    <li>Iced Latte - R40</li>
-    <li>Milkshake - R45</li>
-    <li>Fresh Juice - R30</li>
-    <li>Bottled Water - R15</li>
+            <div class="menu-card">
+                <img src="images/espressocup.webp" alt="Espresso" width="100px">
+                <h3>Espresso</h3>
+                <p>Rich and bold single shot</p>
+                <span class="price">R 35</span>
+            </div>
 
-<h2>Breakfast & Light Meals</h2>
-    <li>Toast & Jam - R25</li>
-    <li>Egg & Bacon Sandwich - R45</li>
-    <li>Chicken Mayo Sandwich - R40</li>
-    <li>Vegetarian Wrap - R35</li>
+            <div class="menu-card">
+               <img src="images/cappuccino.webp" alt="Cappuccino" width="100px">
+                <h3>Cappuccino</h3>
+                <p>Espresso with steamed milk & foam</p>
+                <span class="price">R 45</span>
+            </div>
 
-<h2>Desserts & Pastries</h2>
-    <li>Chocolate Cake - R35</li>
-    <li>Cheesecake - R40</li>
-    <li>Croissant - R30</li>
-    <li>Muffin - R25</li>
-    <li>Cookies - R15</li>
+            <div class="menu-card">
+                <img src="images/latte.webp" alt="Latte" width="100px">
+                <h3>Caffe Latte</h3>
+                <p>Espresso with steamed milk</p>
+                <span class="price">R 48</span>
+            </div>
 
+            <div class="menu-card">
+                <img src="images/Mocha.webp" alt="Mocha" width="100px">
+                <h3>Mocha</h3>
+                <p>Espresso, chocolate & steamed milk</p>
+                <span class="price">R 52</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/americano.webp" alt="Americano"  width="100px">
+                <h3>Americano</h3>
+                <p>Espresso with hot water</p>
+                <span class="price">R 38</span>
+            </div>
+            
+            <div class="menu-card">
+                <img src="images/croissant.webp" alt="Croissant"  width="100px">
+                <h3>Butter Croissant</h3>
+                <p>Freshly baked daily</p>
+                <span class="price">R 28</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/chocolatecake.webp" alt="Chocolate Cake"  width="100px">
+                <h3>Chocolate Cake</h3>
+                <p>Rich moist chocolate cake</p>
+                <span class="price">R 35</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/cheesecake.webp" alt="Cheesecake"  width="100px">
+                <h3>Cheesecake</h3>
+                <p>Creamy New York style</p>
+                <span class="price">R 40</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/muffin.webp" alt="Muffin"  width="100px">
+                <h3>Muffin</h3>
+                <p>Blueberry or Chocolate</p>
+                <span class="price">R 25</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/cookie.webp" alt="Cookies"  width="100px">
+                <h3>Cookies</h3>
+                <p>Chocolate chip (2 pcs)</p>
+                <span class="price">R 15</span>
+            </div>
+
+        </div>
+    </section>
     </main>
 
-    <!--This is my footer it should be the same on all pages-->
+    <!-- Footer -->
     <footer>
-        <hr style="border: 2px solid black;">
-        <p>&copy;Copyrights Bloom & Bean</p>
+        <p>&copy; Copyrigts Bloom & Bean</p>
     </footer>
 
-    
 </body>
 </html>

@@ -3,70 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specials</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Specials - Coffee Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+  
 </head>
-<body style="background-color: beige;">
-     <!--This is my header it should be the same on all pages-->
-    <header>
-        <nav>
-            <h1>Bloom & Bean</h1>
-            <hr style="border: 2px solid black;">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="menu.html">Menu</a>
-            <a href="contact.html">Contact</a>
-            <a href="order.html">Order</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="specials.html">Specials</a>
-            <hr style="border: 2px solid black;">
-        </nav>
-    </header>
+<body>
 
-    <main>
-        
-        <h2> Weekly Deals</h2>
-    <li><b>Monday:</b> Buy 1 Coffee (Espresso/Americano) and get 1 FREE</li>
-    <li><b>Tuesday:</b> Free Cookies with any Hot Drink</li>
-    <li><b>Wednesday:</b> Cappuccino + Muffin Combo - R45</li>
-    <li><b>Friday:</b> 20% off all Cold Drinks</li>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">☕ Coffee Haven</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+</header>
 
-<h2> Drink Specials</h2>
-    <li>Latte + Croissant - R50</li>
-    <li>Iced Latte + Cookies - R45</li>
-    <li>Milkshake + Muffin - R60</li>
+<main>
+    <!-- Specials Section -->
+    <section class="specials section-padding">
+        <h2>Weekly Specials</h2>
+        <p class="subtitle">Limited time offers • While stocks last</p>
 
-<h2> Meal Deals</h2>
-    <li>Egg & Bacon Sandwich + Coffee - R60</li>
-    <li>Chicken Mayo Sandwich + Juice - R65</li>
-    <li>Vegetarian Wrap + Tea - R50</li>
+        <!-- Weekly Deals -->
+        <h3 class="category-title">Weekly Deals</h3>
+        <div class="specials-grid">
+            <div class="special-card">
+                <h3>Monday</h3>
+                <p><strong>Buy 1 Coffee</strong> (Espresso/Americano) and get 1 FREE</p>
+            </div>
+            <div class="special-card">
+                <h3>Tuesday</h3>
+                <p><strong>Free Cookies</strong> with any Hot Drink</p>
+            </div>
+            <div class="special-card">
+                <h3>Wednesday</h3>
+                <p><strong>Cappuccino + Muffin Combo</strong> - R45</p>
+            </div>
+            <div class="special-card">
+                <h3>Friday</h3>
+                <p><strong>20% off</strong>Beverages</p>
+            </div>
+        </div>
 
-<h2> Dessert Combos</h2>
-    <li>Chocolate Cake + Hot Chocolate - R60</li>
-    <li>Cheesecake + Latte - R65</li>
+        <!-- Drink Specials -->
+        <h3 class="category-title">Drink Specials</h3>
+        <div class="specials-grid">
+            <div class="special-card">
+                <h3>Latte + Croissant</h3>
+                <span class="price">R 50</span>
+            </div>
+            <div class="special-card">
+                <h3> Latte + Cookies</h3>
+                <span class="price">R 45</span>
+            </div>
+            <div class="special-card">
+                <h3>Espresso + Muffin</h3>
+                <span class="price">R 60</span>
+            </div>
+        </div>
 
-<h2> Featured Special</h2>
-<p>
-    <b>Bloom Latte Special - R40</b><br>
+        <!-- Dessert Combos -->
+        <h3 class="category-title">Dessert Combos</h3>
+        <div class="specials-grid">
+            <div class="special-card">
+                <h3>Chocolate Cake + Hot Chocolate</h3>
+                <span class="price">R 60</span>
+            </div>
+            <div class="special-card">
+                <h3>Cheesecake + Latte</h3>
+                <span class="price">R 65</span>
+            </div>
+        </div>
 
-    Enjoy our signature floral-inspired latte at a discounted price for a limited time!
+        <!-- Featured Special -->
+        <div class="featured-special">
+            <h2>Featured Special</h2>
+            <h3>Bloom Latte Special</h3>
+            <p><strong>Only R40</strong> — Enjoy our signature floral-inspired latte at a special price for a limited time!</p>
+        </div>
 
-</p>
-
-<hr>
-<h3> Note</h3>
-<p>
-    Specials are available for a limited time and while stock lasts.<br>
-    Prices may change without notice.
-</p>
+        <div class="note">
+            <h3>Note</h3>
+            <p>Specials are available for a limited time and while stock lasts.<br>
+            Prices may change without notice.</p>
+        </div>
+    </section>
     </main>
 
-    <!--This is my footer it should be the same on all pages-->
+    <!-- Footer -->
     <footer>
-        <hr style="border: 2px solid black;">
-        <p>&copy;Copyrights Bloom & Bean</p>
+        <p>&copy; Copyrights Bloom & Bean</p>
     </footer>
 
-    
 </body>
 </html>

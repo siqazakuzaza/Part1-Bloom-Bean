@@ -3,108 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Order Online - Coffee Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+
 </head>
-<body style="background-color: beige;">
-     <!--This is my header it should be the same on all pages-->
-    <header>
-        <nav>
-            <h1>Bloom & Bean.</h1>
-            <hr style="border: 2px solid black;">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="menu.html">Menu</a>
-            <a href="contact.html">Contact</a>
-            <a href="order.html">Order</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="specials.html">Specials</a>
-            <hr style="border: 2px solid black;">
-        </nav>
-    </header>
+<body>
 
-    <main>
-        
+<header>
+    <!-- Navbar (Consistent with all pages) -->
+    <nav class="navbar">
+        <div class="logo">☕ Bloom & Bean</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+</header>
+
+<main>
+    <!-- Order Section -->
+    <section class="order section-padding">
         <h2>📝 Place Your Order</h2>
+        
+        <form class="order-form">
 
-<form>
+            <h3>Your Details</h3>
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
 
-<h3>Your Details</h3>
+            <h3>Select Your Item</h3>
+            <select required>
+                <option value="">-- Choose an item --</option>
+                <option>Espresso - R35</option>
+                <option>Americano - R38</option>
+                <option>Cappuccino - R45</option>
+                <option>Latte - R48</option>
+                <option>Mocha - R52</option>
+                <option>Cheesecake - R40</option>
+                <option>Cookies - R15</option>
+                <option>Muffin - R25</option>
+                <option>Chocolatecake - R35</option>
+                <option>Croissant - R28</option>
+                
+            <h3>Quantity</h3>
+            <input type="number" min="1" value="1" required>
 
-Name: <input type="text" required><br><br>
+            <h3>Pickup or Delivery</h3>
+            <select id="deliveryOption" required>
+                <option value="">-- Select --</option>
+                <option value="pickup">Pickup</option>
+                <option value="delivery">Delivery</option>
+            </select>
 
-Phone: <input type="text" required><br><br>
+            <div id="addressField" style="display: none;">
+                <h3>Delivery Address</h3>
+                <textarea rows="4" placeholder="Full address for delivery..."></textarea>
+            </div>
 
+            <h3>Extra Notes</h3>
+            <textarea rows="4" placeholder="Any special instructions... (e.g. extra sugar, no foam, etc.)"></textarea>
 
-<h3>Select Your Item</h3>
-<select>
-    <option>Espresso - R20</option>
-    <option>Americano - R25</option>
-    <option>Cappuccino - R30</option>
-    <option>Latte - R35</option>
-    <option>Hot Chocolate - R35</option>
-    <option>Tea - R20</option>
-    <option>Iced Coffee - R35</option>
-    <option>Iced Latte - R40</option>
-    <option>Milkshake - R45</option>
-    <option>Fresh Juice - R30</option>
-    <option>Bottled Water - R15</option>
-    <option>Toast & Jam - R25</option>
-    <option>Egg & Bacon Sandwich - R45</option>
-    <option>Chicken Mayo Sandwich - R40</option>
-    <option>Vegetarian Wrap - R35</option>
-    <option>Chocolate Cake - R35</option>
-    <option>Cheesecake - R40</option>
-    <option>Croissant - R30</option>
-    <option>Muffin - R25</option>
-    <option>Cookies - R15</option>
-    <option>Bloom Latte - R45</option>
-    <option>Caramel Dream Latte - R50</option>
-    <option>Mocha Delight - R48</option>
-
-</select>
-
-<br><br>
-
-Quantity: <input type="number" min="1" value="1"><br><br>
-
-
-
-<h3>Pickup or Delivery</h3>
-
-<select>
-
-    <option>Pickup</option>
-    <option>Delivery</option>
-
-</select>
-
-<br><br>
-
-Address (if delivery):<br>
-
-<textarea rows="4" cols="30"></textarea>
-
-<br><br>
-
-
-<h3>Extra Notes</h3>
-
-<textarea rows="3" cols="30" placeholder="Any special instructions..."></textarea>
-<br><br>
-
-<input type="submit" value="Place Order">
-
-</form>
-
-    </main>
-
-    <!--This is my footer it should be the same on all pages-->
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+    </section>
+</main>
+    <!-- Footer -->
     <footer>
-        <hr style="border: 2px solid black;">
-        <p>&copy;Copyrights Bloom & Bean</p>
+        <p>&copy; Copyrights Bloom & Bean</p>
     </footer>
 
-    
 </body>
 </html>

@@ -3,53 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Bloom & Bean | Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar section-content">
-           <a href="#" class="nav-logo">
-            <h2 class="logo-text">Coffee</h2>
-           </a>
-           <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Menu</a>
-            </li>
-             <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-            </li>
-             <li class="nav-item">
-                <a href="#" class="nav-link">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Order</a>
-             <li class="nav-item">
-                <a href="#" class="nav-link">Specials</a>
-            </li>
-    
-           </ul>
-        </nav>
-    </header>
 
-    <main>
+<header>
+    <!-- Navbar (same on all pages) -->
+    <nav class="navbar">
+        <div class="logo">☕ Bloom & Bean</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Perfect Brew at Bloom & Bean</h1>
+            <p>Sip.Smell.Smile.Discover the magic of Bloom & Bean coffee.</p>
+            <a href="order.html" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Quick Intro -->
+    <section class="intro">
         <h2>Welcome to Bloom & Bean</h2>
-       <img src="images/Bloom&BeanLogo.jpg" alt="Logo of Bloom & Bean" width="500" height="450">
-       <p>Sip.Smell.Smile.Discover the magic of Bloom & Bean coffee.</p>
-    </main>
+        <p>Where every cup tells a story. Premium beans, artisan brews, and a cozy atmosphere await you.</p>
+        <img src="images/hero-coffee.jpg,coffeebeingspilled.webp.webp" alt="Cup of coffee being spilled">
+    </section>
+</main>
 
-    <!--This is my footer it should be the same on all pages-->
     <footer>
-        <hr style="border: 2px solid black;">
-        <p>&copy;Copyrights Bloom & Bean</p>
+        <p>&copy; Copyrights Bloom & Bean</p>
     </footer>
 
-    
 </body>
 </html>
