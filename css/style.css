@@ -66,20 +66,93 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:80px 20px;
+    min-height: 85vh;
+    padding: 40px;
     background:#f8f4ef;
 }
 
 .hero-content{
-    background:#4b3b36;
-    color:white;
-    text-align:center;
-    padding:40px;
-    border-radius:15px;
-    max-width:800px;
-    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #883b3b, #662828);
+    padding: 60px;
+    border-radius : 25px;
+    max-width: 1200px;
+    width: 90%;
+    align-items: center;
 }
 
+.text-content {
+    flex: 1;
+    color: white;
+}
+
+.text-content h2 {
+    color: #f8b400;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.text-content p {
+    font-size: 1.1rem ;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: #f8b400;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.btn-primary :hover {
+    background: #ffcc33;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 2px white;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+.btn-secondary:hover {
+    background: white;
+    color: #2b0f0f;
+
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+
+}
+
+.image-content img {
+    max-width:450px ;
+    width: 100%;
+
+}
 .hero-image{
     width:300px;
     border-radius:12px;
@@ -361,6 +434,28 @@ footer{
 /* RESPONSIVE */
 
 @media(max-width:768px){
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .buttons {
+        justify-content: center;
+
+    }
+
+    .text-content h1 {
+        font-size: 2.2rem;
+
+    }
+
+    .image-content img {
+        margin-top: 30px;
+        max-width: 300px;
+
+    }
 
     .navbar{
         flex-direction:column;
