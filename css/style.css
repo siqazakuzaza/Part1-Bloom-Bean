@@ -338,6 +338,31 @@ body{
 
 /* GALLERY */
 
+#lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+}
+
+#lightboxImg{
+display:block;
+margin:5% auto;
+max-width:80%;
+}
+
+#close{
+color:white;
+font-size:40px;
+position:absolute;
+top:20px;
+right:40px;
+cursor:pointer;
+}
+
 .gallery{
     text-align:center;
 }

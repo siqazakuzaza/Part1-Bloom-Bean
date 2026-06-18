@@ -28,31 +28,36 @@
     </header>
 
 <main>
-    <!-- Gallery Section -->
-    <section class="gallery section-padding">
-        <h2>Our Moments</h2>
-        <p class="subtitle">Capturing the warmth, aroma, and community at Bloom & Bean</p>
-        
-        <div class="gallery-grid">
-            <div class="gallery-item">
-               <img src="images/coffeeshopoutside.jpg" alt="Outside of coffee shop" width="300px">
-            </div>
-            <div class="gallery-item">
-                <img src="images/Barista at work ☕️.jpg" alt="Barista at work" width="300px">
-            </div>
-            <div class="gallery-item">
-                <img src="images/cafeinterior.jpg" alt="Cafe interior" width="300px">
-            </div>
-            <div class="gallery-item">
-                <img src="images/pastries.jpg" alt="Pastries" width="300px">
-            </div>
+    <form id="enquiryForm">
 
-            <div id="lightbox">
-                <span id="close">&times;</span>
-                <img id="lightboxImg">
-            </div>
-        </div>
-    </section>
+<input type="text" id="customerName"
+placeholder="Name" required>
+
+<select id="coffeeType">
+
+<option value="">Choose Coffee</option>
+<option>Espresso</option>
+<option>Cappuccino</option>
+<option>Latte</option>
+<option>Mocha</option>
+<option>Americano</option>
+<option>Butter Croissant</option>
+<option>Chocolate Cake</option>
+<option>Cheesecake</option>
+<option>Muffin</option>
+<option>Cookies</option>
+
+</select>
+
+<input type="number" id="quantity"
+placeholder="Quantity">
+
+<button type="submit">Check Price</button>
+
+<p id="priceResult"></p>
+
+</form>
+
     </main>
 
     <!-- Footer -->
